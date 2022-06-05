@@ -13,3 +13,4 @@ print('{} x {} = {} '.format(n, 8, n * 8))
 print('{} x {} = {} '.format(n, 9, n * 9))
 print('{} x {} = {} '.format(n, 10, n * 10))
 print('-' * 10)
+
