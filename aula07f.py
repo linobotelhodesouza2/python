@@ -1,3 +1,4 @@
+#DESAFIOS
 #FAÇA UM PROGRAMA QUE LEIA UM NUMERO INTEIRO QUALQUER E MOSTRE NA TELA A SUA TABUADA.
 n = int(input('Digite um numero: '))
 #print('O numero digitado foi {}, sua tabuada é \n {} x {} = {} '.format(n, n, 1, n * 1 ))

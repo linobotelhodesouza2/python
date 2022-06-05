@@ -1,3 +1,4 @@
+#DESAFIOS
 #FAÇA UM ALGORITMO QUE LEIA O PREÇO DE UM PRODUTO E MOSTRE SEU NOVO PREÇO, COM 5% DE DESCONTO.
 p = float(input('Digite o preço do produto: '))
 desc = (p / 100) * 95

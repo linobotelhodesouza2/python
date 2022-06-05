@@ -1,3 +1,4 @@
+#DESAFIOS
 #FAÇA UM ALGORITMO QUE LEIA O SALARIO DE UM FUNCIONÁRIO E MOSTRE SEU NOVO SALÁRIO, COM 15% DE AUMENTO.
 f = float(input('Insira o valor do seu sálario: '))
 s = (f / 100) * 115
