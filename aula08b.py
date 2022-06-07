@@ -11,3 +11,11 @@ from math import floor # importando o modulo matematico mais somento o arredonda
 num = float(input('Digite um numero qualque: '))
 inteira = floor(num) # inserindo somente o metodo floor na variavel num
 print('O numero {} tem a parte inteira {}'.format(num, inteira))
+
+import math
+num = float(input('Digite um valor: '))
+print('O valor digitado foi {} e a sua porção inteira é {}. '.format(num, math.trunc(num)))
+
+from math import trunc
+num = float(input('Digite um valor: '))
+print('O valor digitado foi {} e a sua porção inteira é {}. '.format(num,trunc(num)))
