@@ -10,15 +10,16 @@ print('''Faça a sua Escolha
 from random import randint
 import time
 escolha = int(input('Digite a sua escolha: '))
-print('****'*5,'JO','****'*5)
+print('****'*5, 'JO', '****'*5)
 t = 1
 time.sleep(t)
-print('****'*5,'KEN','****'*5)
+print('****'*5, 'KEN', '****'*5)
 t = 1
 time.sleep(t)
-print('****'*5,'PÔ','****'*5)
+print('****'*5, 'PÔ', '****'*5)
 t = 1
 time.sleep(t)
+
 if escolha == 1:
     print('\no jogador escolheu PAPEL')
 elif escolha == 2:
@@ -26,7 +27,7 @@ elif escolha == 2:
 elif escolha == 3:
     print('\no jogador escolheu TESOURA')
 
-# juntando o computador mais o jogador
+# COMP MAIS JOGADOR
 num = randint(1, 3)
 if num == 1:
     print('o computador escolheu PAPEL\n')
@@ -35,23 +36,23 @@ elif num == 2:
 elif num == 3:
     print('o computador escolheu TESOURA\n')
 
-# logica de quem ganhou e quem perdeu
+# QUEM GANHA E QUEM PERDE
 print('****'*10)
-#ESCOLHA UM
+# ESCOLHA UM
 if escolha == 1 and num == 2:
     print('PAPEL GANHA DE PEDRA VOÇÊ GANHOU')
 elif escolha == 1 and num == 3:
     print('PAPEL PERDE PARA TESOURA VOÇÊ PERDEU')
 elif escolha == 1 and num == 1:
     print('OPS DEU EMPATE')
-#ESCOLHA DOIS
+# ESCOLHA DOIS
 if escolha == 2 and num == 1:
     print('PEDRA PERDE PARA PAPEL VOÇÊ PERDEU')
 elif escolha == 2 and num == 3:
     print('PEDRA GANHA DA TESOURA VOÇÊ GANHOU')
 elif escolha == 2 and num == 2:
     print('OPS DEU EMPATE')
-#ESCOLHA TRES
+# ESCOLHA TRES
 if escolha == 3 and num == 1:
     print('TESOURA GANHA DO PAPEL VOÇÊ GANHOU')
 elif escolha == 3 and num == 2:
