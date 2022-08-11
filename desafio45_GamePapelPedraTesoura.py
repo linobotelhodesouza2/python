@@ -8,7 +8,17 @@ print('''Faça a sua Escolha
 [3]TESOURA
 ''')
 from random import randint
+import time
 escolha = int(input('Digite a sua escolha: '))
+print('****'*5,'JO','****'*5)
+t = 1
+time.sleep(t)
+print('****'*5,'KEN','****'*5)
+t = 1
+time.sleep(t)
+print('****'*5,'PÔ','****'*5)
+t = 1
+time.sleep(t)
 if escolha == 1:
     print('\no jogador escolheu PAPEL')
 elif escolha == 2:
