@@ -8,13 +8,13 @@ a = float(input('Digite o primeiro segmento: '))
 b = float(input('Digite o segundo segmento: '))
 c = float(input('Digite o terceiro segmento: '))
 if a < b + c and b < c + a and c < a + b:
-    print('Os segmentos PODEM gerar um triângulo')
+    print('Os segmentos PODEM gerar um triângulo ', end='')# colocando o print EQUILATERO ao lado da linha com o ,end=''
     if a == b == c:
-        print('TRIANGULO EQUILATERO')
+        print('EQUILATERO')
     elif a == b or a == c:
-        print('TRIANGULO ISOSCELES')
+        print('ISOSCELES')
     elif a != b and b != c and c != a:
-        print('TRIANGULO ESCALENO')
+        print('ESCALENO')
 else:
     print('Os segmentos NÃO PODEM gerar um triângulo')
 
