@@ -10,14 +10,14 @@ print('''Faça a sua Escolha
 from random import randint
 import time
 escolha = int(input('Digite a sua escolha: '))
-print('****'*5, 'JO', '****'*5)
-t = 1
+print('****'*10, 'JO', '****'*10)
+t = 0.5
 time.sleep(t)
-print('****'*5, 'KEN', '****'*5)
-t = 1
+print('****'*10, 'KEN', '****'*10)
+t = 0.5
 time.sleep(t)
-print('****'*5, 'PÔ', '****'*5)
-t = 1
+print('****'*10, 'PÔ', '****'*10)
+t = 0.5
 time.sleep(t)
 
 if escolha == 1:
@@ -59,3 +59,45 @@ elif escolha == 3 and num == 2:
     print('TESOURA PERDE PARA PEDRA VOÇÊ PERDEU')
 elif escolha == 3 and num == 3:
     print('OPS DEU EMPATE')
+'''
+#RESOLUÇÂO DE OUTRA FORMA
+from random import randint
+itens = ('Pedra', 'Papel', 'Tesoura')
+computador = randint(0, 2)
+print('''Qual a sua escolha?
+[1]PAPEL
+[2]PEDRA
+[3]TESOURA
+''')
+jogador = int(input('Qual a sua jogada ?'))
+print('O computador jogou {}'.format(itens[computador]))
+print('O jogador jogou {}'.format(itens[jogador]))
+print('-='*12)
+if computador == 0:# computador jogou PEDRA
+    if jogador == 0:
+        print('EMPATE')
+    elif jogador == 1:
+        print('JOGADOR VENCE')
+    elif jogador == 2:    
+        print('COMPUTADOR VENCE')
+    else:
+        print('JOGADA INVALIDA')
+if computador == 0:  # computador jogou PAPEL
+    if jogador == 0:
+        print('COMPUTADOR VENCE')
+    elif jogador == 1:
+        print('EMPATE')
+    elif jogador == 2:
+        print('JOGADOR VENCE')
+    else:
+        print('JOGADA INVALIDA')
+if computador == 0:  # computador jogou TESOURA
+    if jogador == 0:
+        print('JOGADOR VENCE')
+    elif jogador == 1:
+        print('COMPUTADOR VENCE')
+    elif jogador == 2:
+        print('EMPATE')
+    else:
+        print('JOGADA INVALIDA')
+'''
