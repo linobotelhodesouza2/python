@@ -7,6 +7,7 @@ SEU PROGRAMA DEVERÁ REALIZAR A OPERAÇ~~AO SOLICITADA EM CADA CASO.
 [4] NOVOS NUMEROS
 [5] SAIR DO PROGRAMA
 '''
+
 from time import sleep
 n1 = int(input('Digite o primeiro numero: '))
 n2 = int(input('Digite o segundo numero: '))
@@ -31,7 +32,7 @@ while not sair:
 [5] SAIR DO PROGRAMA
 ''')
 
-    if opcao == 2:
+    elif opcao == 2:
         print('Opção escolhida foi Multiplicar os valores\nA multiplicação fica {} x {} = {}'.format(n1, n2, n1 * n2))
         print('===' * 10)
         print('''[1] SOMAR
@@ -41,7 +42,7 @@ while not sair:
 [5] SAIR DO PROGRAMA
 ''')
 
-    if opcao == 3:
+    elif opcao == 3:
         if n1 > n2:
             print('Opção escolhida foi Maior dos valores\nO maior valor é {} '.format(n1))
             print('===' * 10)
@@ -61,7 +62,7 @@ while not sair:
 [5] SAIR DO PROGRAMA
 ''')
 
-    if opcao == 4:
+    elif opcao == 4:
         print('==='* 10)
         n1 = int(input('Digite o primeiro numero: '))
         n2 = int(input('Digite o segundo numero: '))
@@ -76,5 +77,5 @@ while not sair:
     elif opcao == 5:
         sair = True
 print('Sua opção foi sair, estamos finalizando o programa...')
-time = sleep(5)
+sleep(5)
 print('Foi bom ter voçê aqui , até mais.')
