@@ -7,6 +7,7 @@ SEU PROGRAMA DEVERÁ REALIZAR A OPERAÇ~~AO SOLICITADA EM CADA CASO.
 [4] NOVOS NUMEROS
 [5] SAIR DO PROGRAMA
 '''
+from time import sleep
 n1 = int(input('Digite o primeiro numero: '))
 n2 = int(input('Digite o segundo numero: '))
 print('==='* 10)
@@ -74,5 +75,6 @@ while not sair:
 ''')
     elif opcao == 5:
         sair = True
-print('Sua opção foi sair')
+print('Sua opção foi sair, estamos finalizando o programa...')
+time = sleep(5)
 print('Foi bom ter voçê aqui , até mais.')
