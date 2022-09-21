@@ -15,7 +15,7 @@ while True:
         sexo = ' '
         while sexo not in 'FM':
                 sexo = str(input('Digite seu sexo [F/M]: ')).strip().upper()[0]
-        if total >= 18:
+        if idade >= 18:
                 total += 1
         if sexo == 'M':
                 totH += 1
