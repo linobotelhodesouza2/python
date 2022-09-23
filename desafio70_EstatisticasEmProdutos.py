@@ -12,7 +12,7 @@ maior = 0
 barato = 0
 while True:
     nome = str(input('\nDigite o nome do produto: ')).upper()
-    preco = int(input('Digite o valor do produto:R$ '))
+    preco = float(input('Digite o valor do produto:R$ '))
     total += preco
     if preco > 1000:
         maior += 1
@@ -36,7 +36,7 @@ while True:
 print('-' * 50)
 print(f'\nVoçê cadastrou {cont} produto(s).')
 print('-' * 50)
-print(f'O seu gasto total foi de {total:.2f}Reais')
+print(f'O seu gasto total foi de {total:.2f} Reais')
 print(f'{maior} produto(s) custou mais de 1000 Reais.')
 print(f'O {nome} foi o produto(s) mais barato e custou  {barato} Reais  .')
 print('-' * 50)
