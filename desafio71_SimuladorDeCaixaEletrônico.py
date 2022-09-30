@@ -26,5 +26,4 @@ while True: # enquanto verdadeiro faça
         totalcedula = 0 # se o total de cedulas possiveis for atingida com a de 1 e zerar e o total for igual a zero pare o programa com o break
         if total == 0:
             break
-    print('-' * 50)
-print('{:^50}'.format('Volte sempre.'))
+print('Volte sempre.')
