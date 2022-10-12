@@ -14,13 +14,16 @@ times = ('Palmeiras', 'Internacional', 'Corinthians', 'Flamengo', 'Fluminense', 
 print(f'Lista de Times do Campeonato Brasileiro 2022 {times}')
 print('--'* 154)
 print(f'Os 5 primeiros colocados são: {times[:5]}')
+#print(f'Os 5 primeiros colocados são: {times[0:5]}') Feito pelo guanabara
 print('--'* 154)
 print(f'Os ultimos 4 colocados são: {times[16:]}')
+#print(f'Os ultimos 4 colocados são: {times[-4:]}') Feito pelo guanabara
 print('--'* 154)
 print(f'Times em Ordem Alfabética: {sorted(times)}')
 print('--'* 154)
-print(times[2])
+print(f'A posição do Corinthians é {times.index("Corinthians")}° Lugar')
 print('--'* 154)
 for pos, times in enumerate(times):
     print(f'Posição em que está o {times} {pos + 1}')
 print('--'* 154)
+
