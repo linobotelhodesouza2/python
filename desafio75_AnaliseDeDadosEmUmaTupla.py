@@ -11,12 +11,16 @@ num = (int(input('Digite um numero: ')),
 print('Voçê digitou os valores:', end='')
 for numeros in num:
     print(f' {numeros}', end='')
-print(f'\nO valor 9 apareceu {num.count(9)} veze(s)')# mostra a contagem de quantas vezes o numero 9 apareceu
+print(f'\nO valor 9 apareceu {num.count(9)} vez (s)')# mostra a contagem de quantas vezes o numero 9 apareceu
 if 3 in num:
     print(f'A posição do primeiro valor 3 foi {num.index(3)+ 1}° posição')
 else:
     print('O valor 3 não foi digitado em nenhuma posição')
-print('Os valores pares digitados foram ', end='')
-for n in num:
-    if n % 2 == 0:
-        print(n, end=' ')
+print('Os valores pares digitados foram os numero(s): ', end='')
+while True:
+    for n in num:
+        if n % 2 == 0:
+            print(n, end=' ')
+    if n % 2 == 1:
+        print('Nao foram digitados valores pares.')
+    break
