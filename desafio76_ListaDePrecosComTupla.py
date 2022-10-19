@@ -15,7 +15,7 @@ lista = ('Lapis', 1.75,
 print('-'* 60)
 print(f'{"LISTAGEM DE PREÇOS" : ^60}')
 print('-'* 60)
-#######################################################################
+
 for pos in range(0, len(lista)):
     if pos % 2 == 0:
         print(f'{lista[pos]:.<51}', end='')

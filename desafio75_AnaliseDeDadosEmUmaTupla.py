@@ -22,4 +22,3 @@ print('Os valores pares digitados foram os numero(s): ', end='')
 for n in num:
     if n % 2 == 0:
         print(n, end=' ')
-    

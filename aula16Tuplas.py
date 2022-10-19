@@ -29,7 +29,7 @@ print('Comi pra caramba!')
 #######################################
 print('---'* 30)
 
-lanche = ('haburguer', 'Suco', 'Pizza', 'Pudim', 'Batata Frita')
+lanche = ('haburguer', 'Suco', 'Pizza', 'Pudim', 'Batata Fritas')
 
 print(sorted(lanche))
 print(lanche)

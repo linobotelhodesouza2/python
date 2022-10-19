@@ -21,7 +21,7 @@ print(f'Os ultimos 4 colocados são: {times[16:]}')
 print('--'* 154)
 print(f'Times em Ordem Alfabética: {sorted(times)}')
 print('--'* 154)
-print(f'A posição do Corinthians é {times.index("Corinthians")}° Lugar')
+print(f'A posição do Corinthians é {times.index("Corinthians")+1}° Lugar')
 print('--'* 154)
 for pos, times in enumerate(times):
     print(f'Posição em que está o {times} {pos + 1}')
