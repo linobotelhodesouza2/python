@@ -3,7 +3,9 @@ DESENVOLVA UM PROGRAMA QUE LEIA QUATRO VALORES PELO TECLADO E GUARDE-OS EM UMA T
 A- QUANTAS VEZES APARECEU O VALOR 9
 B- EM QUE POSIÇÃO FOI DIGITADO O PRIMEIRO VALOR 3
 C- QUAIS FORAM OS NUMEROS PARES
+
 '''
+
 num = (int(input('Digite um numero: ')),
        int(input('Digite outro numero: ')),
        int(input('Digite mais um numero: ')),
@@ -17,10 +19,7 @@ if 3 in num:
 else:
     print('O valor 3 não foi digitado em nenhuma posição')
 print('Os valores pares digitados foram os numero(s): ', end='')
-while True:
-    for n in num:
-        if n % 2 == 0:
-            print(n, end=' ')
-    if n % 2 == 1:
-        print('Nao foram digitados valores pares.')
-    break
+for n in num:
+    if n % 2 == 0:
+        print(n, end=' ')
+    
